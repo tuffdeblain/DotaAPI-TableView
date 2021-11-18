@@ -32,10 +32,4 @@ struct DotaHero: Decodable {
     var attack_range: Int?
     var attack_rate: Double?
     var move_speed: Int?
-    var legs: Int?
-}
-
-enum URLS: String {
-    case openDotaHeroURL = "https://api.opendota.com/api/constants/heroes"
-    case opedDotaURL = "https://api.opendota.com"
 }

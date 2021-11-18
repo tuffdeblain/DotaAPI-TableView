@@ -10,7 +10,7 @@ import UIKit
 
 class DotaHeroesViewController: UITableViewController {
 
-    @IBOutlet weak var iconHeroImage: UIImageView!
+
     private var imageData: UIImage?
     private var dotaHeroes: [DotaHero?] =  []
     private var jsonArray: [JSON]? = []
@@ -39,6 +39,7 @@ class DotaHeroesViewController: UITableViewController {
             
             cell.imageView?.image = UIImage(data: dotaHeroes[index]?.iconData ?? Data())
             cell.textLabel?.text = dotaHeroes[index]?.localized_name
+            cell.textLabel?.textColor = UIColor.white
 
         }
         
@@ -54,17 +55,18 @@ class DotaHeroesViewController: UITableViewController {
 }
 
 extension DotaHeroesViewController {
-    func getData() {
-        NetworkManager.shared.getData { heroes in
+   private func getData() {
+        NetworkManager.shared.getDataForHeroes { heroes in
             DispatchQueue.main.async {
                 self.dotaHeroes = heroes
                 self.tableView.reloadData()
             }
         }
     }
+
     
-    func getImage(url: String, index: Int){
-        NetworkManager.shared.getImage(url: url, index: index) { data in
+    private func getImage(url: String, index: Int){
+        NetworkManager.shared.getImageForHeroe(url: url, index: index) { data in
             self.dotaHeroes[index]?.iconData = data
         }
     }
