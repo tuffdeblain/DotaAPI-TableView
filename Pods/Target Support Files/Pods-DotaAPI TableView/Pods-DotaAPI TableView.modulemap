@@ -1,0 +1,6 @@
+framework module Pods_DotaAPI_TableView {
+  umbrella header "Pods-DotaAPI TableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
