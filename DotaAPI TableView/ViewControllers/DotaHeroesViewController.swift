@@ -32,15 +32,15 @@ class DotaHeroesViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier") as! DotaHeroesTableViewCell
         index = indexPath.item
         if (dotaHeroes[index]?.name != nil){
-            getImage(url: (dotaHeroes[index]?.icon)!, index: index)
             
-            cell.imageView?.image = UIImage(data: dotaHeroes[index]?.iconData ?? Data())
+           
             cell.textLabel?.text = dotaHeroes[index]?.localized_name
             cell.textLabel?.textColor = UIColor.white
-
+            cell.getImage(imageURL: URLS.opedDotaURL.rawValue + (self.dotaHeroes[index]?.icon ?? ""))
         }
         
         return cell
@@ -70,6 +70,8 @@ extension DotaHeroesViewController {
             self.dotaHeroes[index]?.iconData = data
         }
     }
+    
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let heroDetailsVC = segue.destination as? HeroDetailsViewController else { return }

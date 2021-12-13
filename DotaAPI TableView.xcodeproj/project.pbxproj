@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		71A2C6DF3E1E1DF8763C08B5 /* Pods_DotaAPI_TableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DEBE0D746C667E3551EF96 /* Pods_DotaAPI_TableView.framework */; };
+		C5305D312767CC1000E3B295 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5305D302767CC1000E3B295 /* ImageManager.swift */; };
+		C5305D332767CCD300E3B295 /* DotaHeroesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5305D322767CCD300E3B295 /* DotaHeroesTableViewCell.swift */; };
 		C582E9BA27421A5F00D0F30D /* RecentMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582E9B927421A5F00D0F30D /* RecentMatch.swift */; };
 		C5A3C14427398B9D00932764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3C14327398B9D00932764 /* AppDelegate.swift */; };
 		C5A3C14627398B9D00932764 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3C14527398B9D00932764 /* SceneDelegate.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		08DEBE0D746C667E3551EF96 /* Pods_DotaAPI_TableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotaAPI_TableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC633F2D356BF776AE4EFA3 /* Pods-DotaAPI TableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaAPI TableView.debug.xcconfig"; path = "Target Support Files/Pods-DotaAPI TableView/Pods-DotaAPI TableView.debug.xcconfig"; sourceTree = "<group>"; };
+		C5305D302767CC1000E3B295 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		C5305D322767CCD300E3B295 /* DotaHeroesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroesTableViewCell.swift; sourceTree = "<group>"; };
 		C582E9B927421A5F00D0F30D /* RecentMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMatch.swift; sourceTree = "<group>"; };
 		C5A3C14027398B9D00932764 /* DotaAPI TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DotaAPI TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A3C14327398B9D00932764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				C5A3C15927398D9300932764 /* NetworkManager.swift */,
+				C5305D302767CC1000E3B295 /* ImageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				C5DCAD19273D834F00427A3F /* HeroDetailsViewController.swift */,
 				C5F00CD3273FA876000E4C8F /* ViewController.swift */,
 				C5F00CD5273FCC7A000E4C8F /* LoginViewController.swift */,
+				C5305D322767CCD300E3B295 /* DotaHeroesTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 				C5A3C14427398B9D00932764 /* AppDelegate.swift in Sources */,
 				C5F00CCE273F8E24000E4C8F /* URLS.swift in Sources */,
 				C5F00CD0273F9AA5000E4C8F /* PlayerModel.swift in Sources */,
+				C5305D312767CC1000E3B295 /* ImageManager.swift in Sources */,
+				C5305D332767CCD300E3B295 /* DotaHeroesTableViewCell.swift in Sources */,
 				C582E9BA27421A5F00D0F30D /* RecentMatch.swift in Sources */,
 				C5F00CD4273FA876000E4C8F /* ViewController.swift in Sources */,
 				C5F00CD6273FCC7A000E4C8F /* LoginViewController.swift in Sources */,
